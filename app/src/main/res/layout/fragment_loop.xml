@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/background2"
+    android:layout_marginHorizontal="12dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="17dp"
+        android:paddingVertical="15dp">
+
+        <LinearLayout
+            android:id="@+id/ln_loop_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/loop_previous"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_set1"
+                android:paddingVertical="11dp"
+                android:src="@drawable/pause_back"
+                app:tint="@color/primary" />
+
+            <TextView
+                android:id="@+id/loopMain"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_set1"
+                android:fontFamily="@font/gothic_a1"
+                android:gravity="center"
+                android:paddingVertical="9dp"
+                android:text="@string/loop_8"
+                android:textColor="@color/primary" />
+
+            <ImageView
+                android:id="@+id/loop_next"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_set2"
+                android:paddingVertical="11dp"
+                android:src="@drawable/play_pause"
+                app:tint="@color/primary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_loop2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:weightSum="3"
+            app:layout_constraintTop_toBottomOf="@id/ln_loop_top"
+
+            >
+
+            <TextView
+                android:id="@+id/loop_8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_set1"
+                android:fontFamily="@font/gothic_a1"
+                android:gravity="center"
+                android:paddingVertical="9dp"
+                android:text="8"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/loop_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_set1"
+                android:fontFamily="@font/gothic_a1"
+                android:gravity="center"
+                android:paddingVertical="9dp"
+                android:text="4"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/loop_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_set2"
+                android:fontFamily="@font/gothic_a1"
+                android:gravity="center"
+                android:paddingVertical="9dp"
+                android:text="2"
+                android:textColor="@color/primary" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_loop3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            app:layout_constraintTop_toBottomOf="@id/ln_loop2"
+
+            >
+
+            <TextView
+                android:id="@+id/loop_1"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_set1"
+                android:fontFamily="@font/gothic_a1"
+                android:gravity="center"
+                android:paddingVertical="9dp"
+                android:text="1"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/loop_1_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_set1"
+                android:fontFamily="@font/gothic_a1"
+                android:gravity="center"
+                android:paddingVertical="9dp"
+                android:text="1/2"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/loop_1_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_set2"
+                android:fontFamily="@font/gothic_a1"
+                android:gravity="center"
+                android:paddingVertical="9dp"
+                android:text="1/4"
+                android:textColor="@color/primary" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@id/ln_loop3">
+
+            <TextView
+                android:id="@+id/loop_in"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_set1"
+                android:fontFamily="@font/gothic_a1"
+                android:gravity="center"
+                android:paddingVertical="9dp"
+                android:text="@string/in_loop"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/loop_out"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_set2"
+                android:fontFamily="@font/gothic_a1"
+                android:gravity="center"
+                android:paddingVertical="9dp"
+                android:text="@string/out_loop"
+                android:textColor="@color/primary" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

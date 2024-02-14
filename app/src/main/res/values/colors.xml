@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="waveform_selected">#41E0E7</color>
+    <color name="waveform_unselected">#133D3E</color>
+    <color name="waveform_unselected_bkgnd_overlay">#4D000000</color>
+    <color name="selection_border">#ffffff</color>
+    <color name="playback_indicator">#ffff66</color>
+    <color name="grid_line">#66ffffff</color>
+    <color name="timecode">#ddffffdd</color>
+    <color name="timecode_shadow">#aa000000</color>
+    <color name="test">#EF4637</color>
+    <color name="red">#BC0411</color>
+
+    <color name="type_bkgnd_alarm">#88880000</color>
+    <color name="type_bkgnd_ringtone">#88008888</color>
+    <color name="type_bkgnd_notification">#88666600</color>
+    <color name="type_bkgnd_music">#88000000</color>
+    <color name="type_bkgnd_unsupported">#88cccccc</color>
+    <color name="background2">#1A1C20</color>
+    <color name="bg_rec">#281E45</color>
+    <color name="verticalsb">#6DEDF7</color>
+    <color name="primary">#11BFC6</color>
+    <color name="primary_main">#AE00C0</color>
+    <color name="bg_gradient">#110D1A</color>
+    <color name="bg_gradient2">#281E46</color>
+    <color name="neutral_700">#333333</color>
+    <color name="background_2">#111216</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="wave_color">#bfb6c0dc</color>
+    <color name="wave_filled_color">#AE00C0</color>
+    <color name="menu_dots_colors">#ffffff</color>
+    <color name="song_background_blur_color">#af0d1220</color>
+    <color name="black_40">#66000000</color>
+    <color name="topDJ_nochoose">#41464B</color>
+    <color name="gray">#ddd</color>
+
+</resources>

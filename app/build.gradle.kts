@@ -1,0 +1,62 @@
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
+
+android {
+    namespace = "com.gambi.quanglinh.djmixer"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "com.gambi.quanglinh.djmixer"
+        minSdk = 23
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+    buildFeatures {
+        buildConfig = true
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation ("com.birbit:android-priority-jobqueue:2.0.1")
+    implementation ("org.greenrobot:eventbus:3.1.1")
+//    implementation ("com.evernote:android-job:1.2.6")
+    //topDj spinnercustom
+    implementation ("com.github.skydoves:powerspinner:1.2.7")
+    implementation ("androidx.preference:preference-ktx:1.1.1")
+    //glide
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    //exo player2
+    implementation ("com.google.android.exoplayer:exoplayer-core:2.14.0")
+
+}
